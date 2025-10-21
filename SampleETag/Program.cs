@@ -1,4 +1,3 @@
-using SampleETag.CustomMiddlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,4 +17,5 @@ if (app.Environment.IsDevelopment())
 }
 app.MapControllers();
 app.UseHttpsRedirection();
+
 await app.RunAsync();
